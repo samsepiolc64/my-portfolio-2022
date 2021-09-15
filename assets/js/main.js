@@ -10,7 +10,6 @@ if(navToggle) {
         navMenu.classList.add('show-menu')
     })
 }
-
 /*===== MENU HIDDEN =====*/
 /* Validate if constant exists */
 if(navClose) {
@@ -19,8 +18,6 @@ if(navClose) {
 
     })
 }
-
-
 /*==================== REMOVE MENU MOBILE ====================*/
 const navLink = document.querySelectorAll('.nav__link')
 

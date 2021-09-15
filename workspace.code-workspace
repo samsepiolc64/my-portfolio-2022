@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "my-portfolio-2022",
+			"path": "my-portfolio-2022"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "portfolio-mj-2021-2"
+	}
+}
