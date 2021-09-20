@@ -8,13 +8,13 @@
 
     /*========== Colors ==========*/
     /* Change favorite color */
-    --hue-color: 230 ; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+    --hue-color: 206 ; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
     /* HSL color mode */
-    --first-color: hsl(var(--hue-color), 69%, 61%);
+    --first-color: hsl(var(--hue-color), 99%, 72%);
     --first-color-second: hsl(var(--hue-color), 69%, 61%);
     --first-color-alt: hsl(var(--hue-color), 57%, 63%);
-    --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
+    --first-color-lighter: hsl(var(--hue-color), 12%, 45%);
     --title-color: hsl(var(--hue-color), 8%, 15%);
     --text-color: hsl(var(--hue-color), 8%, 45%);
     --text-color-light: hsl(var(--hue-color), 8%, 65%);
@@ -294,9 +294,16 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(225deg, var(--first-color), var(--first-color-second));
-    z-index: 1;
-    mix-blend-mode: screen;
+    /* background: linear-gradient(225deg, var(--first-color), var(--first-color-second)); */
+    /* z-index: 0; */
+ 
+
+
+
+
+    /* mix-blend-mode: normal; */
+ 
+
     
 }
 
@@ -309,6 +316,7 @@ img {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    object-position:top;
 }
 
 .home__content {
@@ -1079,6 +1087,12 @@ img {
         left: 0;
         width: 100%;
         height: 100%;
+    }
+
+    .home__photo img {
+        object-fit:cover;
+        object-position:top;
+        opacity: .1;
     }
     
 
