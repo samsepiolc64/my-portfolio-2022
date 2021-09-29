@@ -766,27 +766,29 @@
                         </div>
                     </div>
                 </div>
-                <form action="" class="contact__form grid">
+                <form action="https://formsubmit.co/mjarmuzek@wp.pl" class="contact__form grid" method="POST">
                     <div class="contact__inputs grid">
                         <div class="contact__content">
-                            <input type="text" class="contact__input" placeholder=" ">
+                            <input type="text" class="contact__input" placeholder=" " required>
                             <label for="" class="contact__label">Imię</label>
                         </div>
                         <div class="contact__content">
-                            <input type="email" class="contact__input" placeholder=" ">
+                            <input type="email" name="email" class="contact__input" placeholder=" " required>
                             <label for="" class="contact__label">E-mail</label>
                         </div>
                     </div>
                     <div class="contact__content contact__msg">
-                        <textarea name="" id="" cols="0" rows="15" class="contact__input" placeholder=" "></textarea>
+                        <textarea name="message" id="" cols="0" rows="15" class="contact__input" placeholder=" "></textarea>
                         <label for="" class="contact__label">Wiadomość</label>
                     </div>
                     <div>
-                        <a href="#" class="button button--flex" data-tilt data-tilt-max="20" data-tilt-speed="600" data-tilt-perspective="800">
-                            Wyślij wiadomość
+                        <button class="button button--flex" type="submit" data-tilt data-tilt-max="20" data-tilt-speed="600" data-tilt-perspective="800">
+                            <span class="button--send"> Wyślij wiadomość</span>
                             <i class="uil uil-message button__icon"></i>
-                        </a>
+                        </button>
                     </div>
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html">
+                    <input type="hidden" name="_subject" value="Wiadomość ze strony Portfolio!">
                 </form>
             </div>
         </section>
@@ -814,6 +816,7 @@
                         <a href="#portfolio" class="footer__link">Portfolio</a>
                     </li>
                 </ul>
+                <!-- https://formsubmit.co/ -->
                 <div class="footer__socials">
                     <a href="https://www.facebook.com/people/Micha%C5%82-Jarmu%C5%BCek" target="_blank"
                         class="footer__social">
@@ -825,8 +828,6 @@
                     <a href="#" target="_blank" class="footer__social">
                         <i class="uil uil-twitter-alt"></i>
                     </a>
-
-
                     <a href="https://www.linkedin.com/in/micha%C5%82-jarmu%C5%BCek-35b242184/" target="_blank"
                         class="footer__social">
                         <i class="uil uil-linkedin-alt"></i>
@@ -834,12 +835,6 @@
                     <a href="https://github.com/samsepiolc64" target="_blank" class="footer__social" >
                         <i class="uil uil-github-alt"></i>
                     </a>
-
-
-
-
-
-
                 </div>
             </div>
             <p class="footer__copy">&#169; Locooko. All right reserved.</p>
