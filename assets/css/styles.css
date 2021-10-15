@@ -808,6 +808,8 @@ img {
 
 .portfolio__img {
     width: 265px;
+    height: 400px;
+    object-fit: cover;
     border-radius: .5rem;
     justify-self: center;
 }
