@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--==================== UNICONS ====================-->
+    <!-- https://iconscout.com/unicons -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    
 
     <!--==================== SWIPER CSS ====================-->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
@@ -25,11 +27,11 @@
             <a href="" class="nav__logo">Michał Jarmużek | Portfolio </a>
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid">
-                    <li class="nav__item">
+                    <!-- <li class="nav__item">
                         <a href="#home" class="nav__link active-link">
                             <i class="uil uil-estate nav__icon"></i> Home
                         </a>
-                    </li>
+                    </li> -->
                     <li class="nav__item">
                         <a href="#about" class="nav__link">
                             <i class="uil uil-user nav__icon"></i> O mnie
@@ -53,6 +55,11 @@
                     <li class="nav__item">
                         <a href="#portfolio" class="nav__link">
                             <i class="uil uil-scenery nav__icon"></i> Portfolio
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#testimonials" class="nav__link">
+                            <i class="uil uil-clipboard-notes nav__icon"></i> Referencje  
                         </a>
                     </li>
                     <li class="nav__item">
@@ -594,9 +601,9 @@
                             alt="" class="portfolio__img">
                         <div class="portfolio__data">
                             <h3 class="portfolio__title">Materiały do kampanii online</h3>
-                            <p class="portfolio__description">Kampania bannerowa Lipowa Aleja - Verseo</p>
+                            <p class="portfolio__description">Kampania bannerowa Lipowa Aleja</p>
                             <a href="https://www.behance.net/gallery/111056943/Kampania-bannerowa-Lipowa-Aleja-Verseo"
-                                class="button button--flex button--small portfolio__button"  data-tilt data-tilt-max="20" data-tilt-speed="600" data-tilt-perspective="800">
+                                class="button button--flex button--small portfolio__button btnBehance"  data-tilt data-tilt-max="20" data-tilt-speed="600" data-tilt-perspective="800">
                                 Zobacz w Behance
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>
@@ -611,7 +618,7 @@
                                 Vitae cum, nihil reprehenderit, alias quidem accusamus veniam repellat laborum fugiat
                                 quae explicabo molestias velit ratione excepturi ab officia atque saepe natus.</p>
                             <a href="#" class="button button--flex button--small portfolio__button" data-tilt data-tilt-max="20" data-tilt-speed="600" data-tilt-perspective="800">
-                                Demo
+                                Zobacz w Behance
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>
                         </div>
@@ -625,7 +632,7 @@
                                 Vitae cum, nihil reprehenderit, alias quidem accusamus veniam repellat laborum fugiat
                                 quae explicabo molestias velit ratione excepturi ab officia atque saepe natus.</p>
                             <a href="#" class="button button--flex button--small portfolio__button" data-tilt data-tilt-max="20" data-tilt-speed="600" data-tilt-perspective="800"> 
-                                Demo
+                                Zobacz w Behance
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>
                         </div>
@@ -659,7 +666,7 @@
         </section>
 
         <!--==================== TESTIMONIAL ====================-->
-        <section class="testimonial section">
+        <section class="testimonial section" id="testimonials">
             <h2 class="section__title">Referencje</h2>
             <span class="section__subtitle">My client saying</span>
             <div class="testimonial__container container swiper-container">
