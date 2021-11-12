@@ -17,6 +17,9 @@
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="assets/css/styles.css">
 
+    <!--==================== FADE ====================-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <title>Michał Jarmużek | PORTFOLIO</title>
 </head>
 
@@ -27,11 +30,11 @@
             <a href="" class="nav__logo">Michał Jarmużek</a>
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid">
-                    <!-- <li class="nav__item">
+                    <li class="nav__item">
                         <a href="#home" class="nav__link active-link">
                             <i class="uil uil-estate nav__icon"></i> Home
                         </a>
-                    </li> -->
+                    </li>
                     <li class="nav__item">
                         <a href="#about" class="nav__link">
                             <i class="uil uil-user nav__icon"></i> O&nbsp;mnie
@@ -108,8 +111,8 @@
             <h2 class="section__title">O mnie</h2>
             <span class="section__subtitle">Tym się zajmuję</span>
             <div class="about__container container grid">
-                <img src="assets/img/about2.jpg" alt="" class="about__img">
-                <div class="about__data">
+                <img src="assets/img/about2.jpg" alt="" class="about__img" data-aos="fade-right" data-aos-duration="1000" data-aos-once="false">
+                <div class="about__data" data-aos="fade-left" data-aos-duration="1000" data-aos-once="false">
                     <p class="about__descrition">
                         Moja praca polega na wykonywaniu szerokiego spektrum zadań: od prac koncepcyjnych, przez
                         projektowanie, po kodowanie. Biorę udział w pracach działu kreacji, przygotowuję grafiki
@@ -148,8 +151,8 @@
             <h2 class="section__title">Doświadczenie</h2>
             <span class="section__subtitle">W tym się specjalizuję</span>
             <div class="skills__container container grid">
-                <!--==================== SKILL 3 ====================-->
-                <div class="skills__content skills__open">
+                <!--==================== SKILL 1 ====================-->
+                <div class="skills__content skills__open" data-aos="fade-right" data-aos-duration="1000" data-aos-once="false">
                     <div class="skills__header">
                         <i class="uil uil-swatchbook skills__icon"></i>
                         <div>
@@ -199,8 +202,8 @@
                         </div>
                     </div>
                 </div>
-                <!--==================== SKILL 1 ====================-->
-                <div class="skills__content skills__close">
+                <!--==================== SKILL 2 ====================-->
+                <div class="skills__content skills__close" data-aos="fade-left" data-aos-duration="1000" data-aos-once="false">
                     <div class="skills__header">
                         <i class="uil uil-brackets-curly skills__icon"></i>
                         <div>
@@ -266,13 +269,12 @@
                     <div class="qualification__button button--flex" data-target="#education">
                         <i class="uil uil-graduation-cap qualification__icon"></i> Edukacja
                     </div>
-
                 </div>
                 <div class="qualification__sections">
                     <!--==================== QUALIFICATION CONTENT 1 ====================-->
                     <div class="qualification__content" data-content id="education">
                         <div class="qualification__data">
-                            <div>
+                            <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="false">
                                 <h3 class="qualification__title">Informatyka w zakresie inżynierii oprogramowania</h3>
                                 <span class="qualification__subtitle">Uniwersytet Zielonogórski</span>
                                 <div class="qualification__calendar">
@@ -290,7 +292,7 @@
                                 <span class="qualification__rounder"></span>
                                 <span class="qualification__line"></span>
                             </div>
-                            <div>
+                            <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="false">
                                 <h3 class="qualification__title">Informatyka w zakresie inżynierii oprogramowania</h3>
                                 <span class="qualification__subtitle">Politechnika Zielonogórska</span>
                                 <div class="qualification__calendar">
@@ -299,7 +301,7 @@
                             </div>
                         </div>
                         <div class="qualification__data">
-                            <div>
+                            <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="false">
                                 <h3 class="qualification__title">Liceum Ogólnokształcące</h3>
                                 <span class="qualification__subtitle">Kościan</span>
                                 <div class="qualification__calendar">
@@ -311,12 +313,11 @@
                                 <!-- <span class="qualification__line"></span> -->
                             </div>
                         </div>
-
                     </div>
                     <!--==================== QUALIFICATION CONTENT 2 ====================-->
                     <div class="qualification__content qualification__active" data-content id="work">
                         <div class="qualification__data">
-                            <div>
+                            <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="false">
                                 <h3 class="qualification__title">Graphic Designer</h3>
                                 <span class="qualification__subtitle">Verseo ADS</span>
                                 <div class="qualification__calendar">
@@ -334,7 +335,7 @@
                                 <span class="qualification__rounder"></span>
                                 <span class="qualification__line"></span>
                             </div>
-                            <div>
+                            <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="false">
                                 <h3 class="qualification__title">Graphic Designer</h3>
                                 <span class="qualification__subtitle">Locooko</span>
                                 <div class="qualification__calendar">
@@ -342,11 +343,8 @@
                                 </div>
                             </div>
                         </div>
-
-
-
                         <div class="qualification__data">
-                            <div>
+                            <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="false">
                                 <h3 class="qualification__title">UX Designer</h3>
                                 <span class="qualification__subtitle">Komputronik</span>
                                 <div class="qualification__calendar">
@@ -358,29 +356,22 @@
                                 <span class="qualification__line"></span>
                             </div>
                         </div>
-
-
-
                         <div class="qualification__data">
                             <div></div>
                             <div>
                                 <span class="qualification__rounder"></span>
                                 <span class="qualification__line"></span>
                             </div>
-                            <div>
+                            <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="false">
                                 <h3 class="qualification__title">Graphic Designer</h3>
                                 <span class="qualification__subtitle">Komputronik</span>
                                 <div class="qualification__calendar">
                                     <i class="uil uil-calendar-alt"></i> kwi 2016 - mar 2020
                                 </div>
                             </div>
-
                         </div>
-
-
-
                         <div class="qualification__data">
-                            <div>
+                            <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="false">
                                 <h3 class="qualification__title">DTP Specialist</h3>
                                 <span class="qualification__subtitle">Komputronik</span>
                                 <div class="qualification__calendar">
@@ -392,27 +383,22 @@
                                 <span class="qualification__line"></span>
                             </div>
                         </div>
-
                         <div class="qualification__data">
                             <div></div>
                             <div>
                                 <span class="qualification__rounder"></span>
                                 <span class="qualification__line"></span>
                             </div>
-                            <div>
+                            <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="false">
                                 <h3 class="qualification__title">Senior Webmaster</h3>
                                 <span class="qualification__subtitle">Komputronik</span>
                                 <div class="qualification__calendar">
                                     <i class="uil uil-calendar-alt"></i> paź 2007 - mar 2020
                                 </div>
                             </div>
-
                         </div>
-
-
-
                         <div class="qualification__data">
-                            <div>
+                            <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="false">
                                 <h3 class="qualification__title">Graphic Designer</h3>
                                 <span class="qualification__subtitle">VisualArts</span>
                                 <div class="qualification__calendar">
@@ -424,25 +410,22 @@
                                 <span class="qualification__line"></span>
                             </div>
                         </div>
-
                         <div class="qualification__data">
                             <div></div>
                             <div>
                                 <span class="qualification__rounder"></span>
                                 <span class="qualification__line"></span>
                             </div>
-                            <div>
+                            <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="false">
                                 <h3 class="qualification__title">Senior Webmaster</h3>
                                 <span class="qualification__subtitle">Interbit</span>
                                 <div class="qualification__calendar">
                                     <i class="uil uil-calendar-alt"></i> cze 2002 - sie 2005
                                 </div>
                             </div>
-
                         </div>
-
                         <div class="qualification__data">
-                            <div>
+                            <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="false">
                                 <h3 class="qualification__title">Web Developer</h3>
                                 <span class="qualification__subtitle">VisualArts</span>
                                 <div class="qualification__calendar">
@@ -454,22 +437,19 @@
                                 <span class="qualification__line"></span>
                             </div>
                         </div>
-
-
                         <div class="qualification__data">
                             <div></div>
                             <div>
                                 <span class="qualification__rounder"></span>
                                 <!-- <span class="qualification__line"></span> -->
                             </div>
-                            <div>
+                            <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="false">
                                 <h3 class="qualification__title">Graphic Designer</h3>
                                 <span class="qualification__subtitle">Impression</span>
                                 <div class="qualification__calendar">
                                     <i class="uil uil-calendar-alt"></i> wrz 2000 - maj 2002
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -484,18 +464,18 @@
 
             <div class="services__container container grid">
                 <!--==================== SERVICE 1 ====================-->
-                <div class="services__content">
+                <div class="services__content"  data-aos="fade-up" data-aos-duration="500" data-aos-once="false">
                     <div>
-                        <i class="uil uil-web-grid services__icon"></i>
-                        <h3 class="services__title">UI/UX<br> Designer</h3>
+                        <i class="uil uil-pen services__icon"></i>
+                        <h3 class="services__title">Grafik komputerowy</h3>
                     </div>
                     <span class="button button--flex button--small button--link services__button">
-                        View More
+                        Sprawdź
                         <i class="uil uil-arrow-right button__icon"></i>
                     </span>
                     <div class="services__modal">
                         <div class="services__modal-content">
-                            <h4 class="services__modal-title">UI/UX <br> Designer</h4>
+                            <h4 class="services__modal-title">Grafik komputerowy</h4>
                             <i class="uil uil-times services__modal-close"></i>
                             <ul class="services__modal-services grid">
                                 <li class="services__modal-service">
@@ -519,13 +499,48 @@
                     </div>
                 </div>
                 <!--==================== SERVICE 2 ====================-->
-                <div class="services__content">
+                <div class="services__content"  data-aos="fade-up" data-aos-duration="750" data-aos-once="false">
+                    <div>
+                        <i class="uil uil-web-grid services__icon"></i>
+                        <h3 class="services__title">Projektant<br>UI/UX</h3>
+                    </div>
+                    <span class="button button--flex button--small button--link services__button">
+                        Sprawdź
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </span>
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="services__modal-title">Projektant<br>UI/UX</h4>
+                            <i class="uil uil-times services__modal-close"></i>
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Quos! Laudantium, quibusdam earum.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Delectus dolores, dolore officiis voluptas.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Dicta reiciendis? Soluta, blanditiis!</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--==================== SERVICE 3 ====================-->
+                <div class="services__content" data-aos="fade-up" data-aos-duration="1000" data-aos-once="false">
                     <div>
                         <i class="uil uil-arrow services__icon"></i>
                         <h3 class="services__title">Frontend<br>Developer</h3>
                     </div>
                     <span class="button button--flex button--small button--link services__button">
-                        View More
+                        Sprawdź
                         <i class="uil uil-arrow-right button__icon"></i>
                     </span>
                     <div class="services__modal">
@@ -553,41 +568,7 @@
                         </div>
                     </div>
                 </div>
-                <!--==================== SERVICE 3 ====================-->
-                <div class="services__content">
-                    <div>
-                        <i class="uil uil-pen services__icon"></i>
-                        <h3 class="services__title">Backend<br>Developer</h3>
-                    </div>
-                    <span class="button button--flex button--small button--link services__button">
-                        View More
-                        <i class="uil uil-arrow-right button__icon"></i>
-                    </span>
-                    <div class="services__modal">
-                        <div class="services__modal-content">
-                            <h4 class="services__modal-title">Backend<br>Developer</h4>
-                            <i class="uil uil-times services__modal-close"></i>
-                            <ul class="services__modal-services grid">
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Lorem ipsum dolor sit amet.</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Quos! Laudantium, quibusdam earum.</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Delectus dolores, dolore officiis voluptas.</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Dicta reiciendis? Soluta, blanditiis!</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </section>
 
@@ -596,9 +577,20 @@
             <h2 class="section__title">Portfolio</h2>
             <span class="section__subtitle">Moje wybrane prace</span>
             <div class="portfolio__container container swiper-container">
+                <div class="portfolio__tabs">
+                    <div class="portfolio__topButton button--flex list active" data-filter="all" data-aos="fade-up" data-aos-duration="500" data-aos-once="false" onclick="filterWork()">
+                        <i class="uil uil-briefcase-alt portfolio__icon"></i> Wszystkie
+                    </div>
+                    <div class="portfolio__topButton button--flex list" data-filter="online" data-aos="fade-up" data-aos-duration="750" data-aos-once="false" onclick="filterWork()">
+                        <i class="uil uil-graduation-cap portfolio__icon"></i> Online
+                    </div>
+                    <div class="portfolio__topButton button--flex list" data-filter="print" data-aos="fade-up" data-aos-duration="1000" data-aos-once="false" onclick="filterWork()">
+                        <i class="uil uil-graduation-cap portfolio__icon"></i> Druk
+                    </div>
+                </div>
                 <div class="swiper-wrapper">
                     <!--==================== PORTFOLIO 1 ====================-->
-                    <div class="portfolio__content grid swiper-slide">
+                    <div class="portfolio__content grid swiper-slide" data-item="online">
                         <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/d874db111056943.5ffb0cb1c70ed.jpg"
                             alt="" class="portfolio__img">
                         <div class="portfolio__data">
@@ -613,7 +605,7 @@
                         </div>
                     </div>
                     <!--==================== PORTFOLIO 2 ====================-->
-                    <div class="portfolio__content grid swiper-slide">
+                    <div class="portfolio__content grid swiper-slide" data-item="online">
                         <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/10c26f111053473.5ffafbf469e49.jpg"
                             alt="" class="portfolio__img">
                         <div class="portfolio__data">
@@ -628,7 +620,7 @@
                         </div>
                     </div>
                     <!--==================== PORTFOLIO 3 ====================-->
-                    <div class="portfolio__content grid swiper-slide">
+                    <div class="portfolio__content grid swiper-slide" data-item="icons">
                         <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/00d20799886393.5efc9f36dcef8.jpg"
                             alt="" class="portfolio__img">
                         <div class="portfolio__data">
@@ -643,39 +635,62 @@
                         </div>
                     </div>
                     <!--==================== PORTFOLIO 4 ====================-->
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/486a5999818641.5efb4991e2091.jpg" alt="" class="portfolio__img">
+                    <div class="portfolio__content grid swiper-slide" data-item="print">
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/486a5999818641.5efb4991e2091.jpg"
+                            alt="" class="portfolio__img">
                         <div class="portfolio__data">
                             <h3 class="portfolio__title">Projekty plakatów</h3>
-                            <p class="portfolio__description">Projekty plakatów dla usług i produktów firmy Profix Multichem.</p>
-                            <a href="https://www.behance.net/gallery/99818641/Projekty-plakatow-dla-Profix-Multichem" class="button button--flex button--small portfolio__button"
-                                data-tilt data-tilt-max="20" data-tilt-speed="600" data-tilt-perspective="800">
+                            <p class="portfolio__description">Projekty plakatów dla usług i produktów firmy Profix
+                                Multichem.</p>
+                            <a href="https://www.behance.net/gallery/99818641/Projekty-plakatow-dla-Profix-Multichem"
+                                class="button button--flex button--small portfolio__button" data-tilt data-tilt-max="20"
+                                data-tilt-speed="600" data-tilt-perspective="800">
                                 Zobacz w Behance
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>
                         </div>
                     </div>
                     <!--==================== PORTFOLIO 5 ====================-->
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="xxxxxxxxxxxxx" alt="" class="portfolio__img">
+                    <div class="portfolio__content grid swiper-slide" data-item="online">
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/88342592338823.5e493b6eca109.jpg"
+                            alt="" class="portfolio__img">
                         <div class="portfolio__data">
-                            <h3 class="portfolio__title">Lorem ipsum</h3>
-                            <p class="portfolio__description">Lorem ipsum dolor sit</p>
-                            <a href="yyyyyyyyyyyyyyyyy" class="button button--flex button--small portfolio__button"
-                                data-tilt data-tilt-max="20" data-tilt-speed="600" data-tilt-perspective="800">
+                            <h3 class="portfolio__title">Landingpage Enova365</h3>
+                            <p class="portfolio__description">Projekt strony internetowej Enova365 dla Komputronik</p>
+                            <a href="https://www.behance.net/gallery/92338823/Projekt-strony-internetowej-Enova365-dla-Komputronik"
+                                class="button button--flex button--small portfolio__button" data-tilt data-tilt-max="20"
+                                data-tilt-speed="600" data-tilt-perspective="800">
                                 Zobacz w Behance
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>
                         </div>
                     </div>
                     <!--==================== PORTFOLIO 6 ====================-->
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="xxxxxxxxxxxxx" alt="" class="portfolio__img">
+                    <div class="portfolio__content grid swiper-slide" data-item="online">
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/7243dc90072021.5e0ca152e79dc.jpg"
+                            alt="" class="portfolio__img">
                         <div class="portfolio__data">
-                            <h3 class="portfolio__title">Lorem ipsum</h3>
-                            <p class="portfolio__description">Lorem ipsum dolor sit</p>
-                            <a href="yyyyyyyyyyyyyyyyy" class="button button--flex button--small portfolio__button"
-                                data-tilt data-tilt-max="20" data-tilt-speed="600" data-tilt-perspective="800">
+                            <h3 class="portfolio__title">Landingpage Hiperkonwergencja</h3>
+                            <p class="portfolio__description">Projekty online Hiperkonwergencja Komputronik Biznes</p>
+                            <a href="https://www.behance.net/gallery/90072021/Projekty-online-Hiperkonwergencja-Komputronik-Biznes"
+                                class="button button--flex button--small portfolio__button" data-tilt data-tilt-max="20"
+                                data-tilt-speed="600" data-tilt-perspective="800">
+                                Zobacz w Behance
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--==================== PORTFOLIO 7 ====================-->
+                    <div class="portfolio__content grid swiper-slide" data-item="print">
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/47143480312475.5cdd5ea8e4ecb.jpg"
+                            alt="" class="portfolio__img">
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Kampania Smog w Polsce</h3>
+                            <p class="portfolio__description">Ulotki "smogowe" Komputronik</p>
+                            <a href="https://www.behance.net/gallery/80312475/Ulotki-smogowe-Komputronik"
+                                class="button button--flex button--small portfolio__button" data-tilt data-tilt-max="20"
+                                data-tilt-speed="600" data-tilt-perspective="800">
                                 Zobacz w Behance
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>
@@ -699,13 +714,13 @@
                 <div class="swiper-button-prev">
                     <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
                 </div>
-                <div class="swiper-pagination"></div>
+                <!-- <div class="swiper-pagination"></div> -->
             </div>
         </section>
 
         <!--==================== PROJECT IN MIND ====================-->
         <section class="project section">
-            <div class="project__bg">
+            <div class="project__bg"   data-aos="fade-up" data-aos-duration="1000" data-aos-once="false">
                 <div class="project__container container grid">
                     <div class="project__data">
                         <h2 class="project__title">Zobacz więcej projektów na Behance</h2>
@@ -728,7 +743,7 @@
             <div class="testimonial__container container swiper-container">
                 <div class="swiper-wrapper">
                     <!--==================== TESTIMONIAL 1 ====================-->
-                    <div class="testimonial__content swiper-slide">
+                    <div class="testimonial__content swiper-slide"   data-aos="fade-right" data-aos-duration="1000" data-aos-once="false">
                         <div class="testimonial__data">
                             <div class="testimonial__header">
                                 <img src="assets/img/testimonial2.jpg" alt="" class="testimonial__img">
@@ -745,10 +760,12 @@
                                 <i class="uil uil-star testimonial__icon-star"></i>
                             </div>
                         </div>
-                        <p class="testimonial__description">Współpracując z Panem Michałem Jarmużkiem, mogłem zawsze liczyć na rzetelną i terminową realizację zlecenia i mieć pewność, że każdy projekt zostanie przez niego potraktowany z równym profesjonalizmem i zaangażowaniem.</p>
+                        <p class="testimonial__description">Współpracując z Panem Michałem Jarmużkiem, mogłem zawsze
+                            liczyć na rzetelną i terminową realizację zlecenia i mieć pewność, że każdy projekt zostanie
+                            przez niego potraktowany z równym profesjonalizmem i zaangażowaniem.</p>
                     </div>
                     <!--==================== TESTIMONIAL 2 ====================-->
-                    <div class="testimonial__content swiper-slide">
+                    <div class="testimonial__content swiper-slide"   data-aos="fade-left" data-aos-duration="1000" data-aos-once="false">
                         <div class="testimonial__data">
                             <div class="testimonial__header">
                                 <img src="assets/img/testimonial1.jpg" alt="" class="testimonial__img">
@@ -765,7 +782,9 @@
                                 <i class="uil uil-star testimonial__icon-star"></i>
                             </div>
                         </div>
-                        <p class="testimonial__description">Projekty graficzne przygotowywane przez Pana Michała są przemyślane, spójne i wykonane z dbałością o każdy szczegół. Bardzo cenię sobie jego zmysł estetyczny i znajomość aktualnych trendów.</p>
+                        <p class="testimonial__description">Projekty graficzne przygotowywane przez Pana Michała są
+                            przemyślane, spójne i wykonane z dbałością o każdy szczegół. Bardzo cenię sobie jego zmysł
+                            estetyczny i znajomość aktualnych trendów.</p>
                     </div>
                     <!--==================== TESTIMONIAL 3 ====================-->
                     <div class="testimonial__content swiper-slide">
@@ -785,7 +804,9 @@
                                 <i class="uil uil-star testimonial__icon-star"></i>
                             </div>
                         </div>
-                        <p class="testimonial__description">Polecam współpracę z Panem Michałem ze względu na indywidualne podejście do klienta oraz konstruktywne uwagi i sugestie, które dla mnie, jako laika, były szczególnie cenne.</p>
+                        <p class="testimonial__description">Polecam współpracę z Panem Michałem ze względu na
+                            indywidualne podejście do klienta oraz konstruktywne uwagi i sugestie, które dla mnie, jako
+                            laika, były szczególnie cenne.</p>
                     </div>
                 </div>
                 <div class="swiper-pagination swiper-pagination-testimonial"></div>
@@ -908,6 +929,14 @@
     <!--==================== MAIN JS ====================-->
     <script src="assets/js/main.js"></script>
     <script type="text/javascript" src="assets/js/vanilla-tilt.min.js"></script>
+
+
+    <!--==================== FADE JS ====================-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
 </body>
 
 </html>

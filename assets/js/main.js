@@ -107,6 +107,45 @@ let swiperPortfolio = new Swiper('.portfolio__container', {
     // keyboard: true,
 });
 
+
+
+
+function filterWork(){
+    let list = document.querySelectorAll('.list');
+    let portfolio__content = document.querySelectorAll('.portfolio__content');
+
+    for (let i=0; i<list.length; i++) {
+        list[i].addEventListener('click', function() {
+            for (let j=0; j<list.length; j++) {
+                list[j].classList.remove('active');
+            }
+            this.classList.add('active');
+
+            let dataFilter = this.getAttribute('data-filter');
+
+            for (let k=0; k<portfolio__content.length; k++) {
+                portfolio__content[k].classList.remove('active');
+                portfolio__content[k].classList.add('hide');
+
+                if (portfolio__content[k].getAttribute('data-item') == dataFilter || dataFilter == "all"){
+                    portfolio__content[k].classList.remove('hide');
+                    portfolio__content[k].classList.add('active');
+                }
+            }
+        }
+        )
+    }
+}
+
+
+
+
+
+
+
+
+
+
 /*==================== TESTIMONIAL ====================*/
 let swiperTestimonial = new Swiper('.testimonial__container', {
     loop: true,
