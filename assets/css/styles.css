@@ -462,8 +462,10 @@ img {
 .about__img {
     width: 200px;
     border-radius: .1rem;
-    justify-self: center;
-    align-self: center;
+    display: block;
+    margin: 0 auto var(--mb-2-5);
+    /* justify-self: center; */
+    /* align-self: center; */
 }
 
 .about__description {
